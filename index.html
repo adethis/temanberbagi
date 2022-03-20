@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="plugins/owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="header-container container">
+        <div class="header-content-inner d-flex justify-content-between align-items-center">
+          <div class="header-logo">
+            <a href="#">
+              <img src="assets/img/yakesma-new-logo.jpg" alt="">
+            </a>
+          </div>
+          <div class="header-menu">
+            <ul class="header-nav nav">
+              <li class="header-menu-item nav-item">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li class="header-menu-item nav-item">
+                <a href="#" class="nav-link">Campaign</a>
+              </li>
+              <li class="header-menu-item nav-item">
+                <a href="#" class="nav-link">Kalulator Zakat</a>
+              </li>
+              <li class="header-menu-item nav-item">
+                <a href="#" class="btn btn-warning btn-cta">Donasi Saya</a>
+              </li>
+            </ul>
+            <button class="header-menu-mobile" aria-label="Main Menu" aria-expanded="false">
+              <svg width="35" height="35" viewBox="0 0 100 100">
+                <path class="line line-1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+                <path class="line line-2" d="M 20,50 H 80"></path>
+                <path class="line line-3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="hero-content">
+              <h3>Teman Berbagi</h3>
+              <p class="d-md-block d-xs-none">adalah Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est possimus nesciunt sed architecto</p>
+              <span class="collected-funds d-md-block d-xs-none">Rp41.000.000</span>
+              <p>Voluptatem est possimus nesciunt sed architecto, aut ducimus repellat beatae ipsum perspiciatis explicabo sint natus autem exercitationem! Cupiditate eum atque adipisci </p>
+              <div class="collected-types d-md-flex d-xs-none">
+                <div class="types-item">
+                  <img src="assets/img/donation.png" alt="">
+                  <span>Zakat</span>
+                </div>
+                <div class="types-item">
+                  <img src="assets/img/mosque.png" alt="">
+                  <span>Wakaf</span>
+                </div>
+                <div class="types-item">
+                  <img src="assets/img/ramadan.png" alt="">
+                  <span>Ramadhan</span>
+                </div>
+              </div>
+              <div class="other-types d-md-flex d-xs-none">
+                <h4>Program Reguler</h4>
+                <div class="other-list">
+                  <div class="other-item">
+                    <img src="assets/img/graduation-cap.png" alt="">
+                    <span>Program Pendidikan</span>
+                  </div>
+                  <div class="other-item">
+                    <img src="assets/img/heart.png" alt="">
+                    <span>Program Sosial</span>
+                  </div>
+                  <div class="other-item">
+                    <img src="assets/img/stethoscope.png" alt="">
+                    <span>Program Kesehatan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="card donasi-sekarang">
+              <div class="card-header">
+                <h3>Donasi Umum</h3>
+              </div>
+              <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="onlinepayment-tab" data-toggle="tab" href="#onlinePayment" role="tab" aria-controls="onlinePayment" aria-selected="true">Online Payment</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="qrcode-tab" data-toggle="tab" href="#qrCode" role="tab" aria-controls="qrCode" aria-selected="false">QR Code</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="onlinePayment" role="tabpanel" aria-labelledby="onlinepayment-tab">
+                    <form method="" action="" autocomplete="off">
+                      <div class="form-field">
+                        <div class="form-group">
+                          <label for="">Nominal <span class="text-danger">*</span></label>
+                          <div class="form-options list-group">
+                            <button type="button" class="list-group-item options-item">Rp25.000</button>
+                            <button type="button" class="list-group-item options-item">Rp50.000</button>
+                            <button type="button" class="list-group-item options-item">Rp100.000</button>
+                            <button type="button" class="list-group-item options-item">Rp150.000</button>
+                          </div>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="input-norek">Rp</span>
+                            </div>
+                            <input type="text" name="nominal-lain" class="form-control number-only" id="nominalLain" placeholder="Masukkan nominal lain" />
+                          </div>
+                          <small id="informInput" class="form-text text-muted">Minimal Rp2000</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Nama Lengkap <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" placeholder="Masukkan nama lengkap" required />
+                        </div>
+                        <div class="form-group">
+                          <label for="">Nomor Handphone <span class="text-danger">*</span></label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="input-norek">+62</span>
+                            </div>
+                            <input type="text" name="nomor-handphone" class="form-control number-only" id="nomorHandphone" placeholder="Masukkan nomor handphone" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Metode Pembayaran <span class="text-danger">*</span></label>
+                          <input id="inputMetodePembayaran" type="text" class="form-control" placeholder="Pilih metode pembayaran" readonly />
+                          <input type="hidden" name="metode-pembayaran" required />
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <div class="is-flex">
+                            <label class="form-check-label" for="exampleCheck1">Sembunyikan nama anda</label>
+                            <small class="form-text text-muted">Donasi sebagai Hamba Allah. Dana yg didonasikan bukan bersumber dan bukan untuk tujuan pencucian uang (money laundry), termasuk terorisme maupun tindak kejahatan lainnya.</small>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary btn-large btn-block">Donasi Sekarang</button>
+                        </div>
+                        <div class="form-group">
+                          <button type="button" class="btn btn-link">Bagikan tautan donasi ke temanmu</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="qrCode" role="tabpanel" aria-labelledby="qrcode-tab">
+                    <div class="qr-area">
+                      <img src="assets/img/qris_all_mob.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="slider-container container">
+        <div class="slider-list owl-carousel owl-theme">
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/slider1.jpg" alt="">
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/slider2.jpg" alt="">
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <img src="assets/img/slider3.jpeg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="campaign">
+      <div class="campaign-container container">
+        <h2>Campaign Pilihan</h2>
+        <div class="campaign-list row">
+          <div class="campaign-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card campaign-card">
+              <div class="card-body">
+                <div class="campaign-thumbnail">
+                  <img src="assets/img/slider1.jpg" alt="">
+                </div>
+                <div class="campaign-content">
+                  <h3 class="campaign-title">Voucher Bahagia Ibu Yatim</h3>
+                  <div class="campaign-author">
+                    <img src="assets/img/logo-sm.png" alt="">
+                    <div class="campaign-author-name">
+                      <span>Yakesma</span>
+                      <i class="fa fa-check-circle author-verified"></i>
+                    </div>
+                  </div>
+                  <div class="campaign-info">
+                    <div class="campaign-funds">
+                      terkumpul
+                      <span class="highlight">
+                        Rp500.000,-
+                      </span>
+                    </div>
+                    <div class="campaign-total-person">
+                      sisa waktu
+                      <span class="highlight">
+                        38
+                      </span>
+                    </div>
+                  </div>
+                  <div class="campaign-progress">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="campaign-target">
+                      <span>dari target</span>
+                      <span>10%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="campaign-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card campaign-card">
+              <div class="card-body">
+                <div class="campaign-thumbnail">
+                  <img src="assets/img/slider2.jpg" alt="">
+                </div>
+                <div class="campaign-content">
+                  <h3 class="campaign-title">Voucher Bahagia Ibu Yatim</h3>
+                  <div class="campaign-author">
+                    <img src="assets/img/logo-sm.png" alt="">
+                    <div class="campaign-author-name">
+                      <span>Yakesma</span>
+                      <i class="fa fa-check-circle author-verified"></i>
+                    </div>
+                  </div>
+                  <div class="campaign-info">
+                    <div class="campaign-funds">
+                      terkumpul
+                      <span class="highlight">
+                        Rp500.000,-
+                      </span>
+                    </div>
+                    <div class="campaign-total-person">
+                      sisa waktu
+                      <span class="highlight">
+                        38
+                      </span>
+                    </div>
+                  </div>
+                  <div class="campaign-progress">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="campaign-target">
+                      <span>dari target</span>
+                      <span>10%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="campaign-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card campaign-card">
+              <div class="card-body">
+                <div class="campaign-thumbnail">
+                  <img src="assets/img/slider3.jpeg" alt="">
+                </div>
+                <div class="campaign-content">
+                  <h3 class="campaign-title">Voucher Bahagia Ibu Yatim</h3>
+                  <div class="campaign-author">
+                    <img src="assets/img/logo-sm.png" alt="">
+                    <div class="campaign-author-name">
+                      <span>Yakesma</span>
+                      <i class="fa fa-check-circle author-verified"></i>
+                    </div>
+                  </div>
+                  <div class="campaign-info">
+                    <div class="campaign-funds">
+                      terkumpul
+                      <span class="highlight">
+                        Rp500.000,-
+                      </span>
+                    </div>
+                    <div class="campaign-total-person">
+                      sisa waktu
+                      <span class="highlight">
+                        38
+                      </span>
+                    </div>
+                  </div>
+                  <div class="campaign-progress">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="campaign-target">
+                      <span>dari target</span>
+                      <span>10%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="campaign-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card campaign-card">
+              <div class="card-body">
+                <div class="campaign-thumbnail">
+                  <img src="assets/img/slider1.jpg" alt="">
+                </div>
+                <div class="campaign-content">
+                  <h3 class="campaign-title">Voucher Bahagia Ibu Yatim</h3>
+                  <div class="campaign-author">
+                    <img src="assets/img/logo-sm.png" alt="">
+                    <div class="campaign-author-name">
+                      <span>Yakesma</span>
+                      <i class="fa fa-check-circle author-verified"></i>
+                    </div>
+                  </div>
+                  <div class="campaign-info">
+                    <div class="campaign-funds">
+                      terkumpul
+                      <span class="highlight">
+                        Rp500.000,-
+                      </span>
+                    </div>
+                    <div class="campaign-total-person">
+                      sisa waktu
+                      <span class="highlight">
+                        38
+                      </span>
+                    </div>
+                  </div>
+                  <div class="campaign-progress">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="campaign-target">
+                      <span>dari target</span>
+                      <span>10%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="campaign-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card campaign-card">
+              <div class="card-body">
+                <div class="campaign-thumbnail">
+                  <img src="assets/img/slider2.jpg" alt="">
+                </div>
+                <div class="campaign-content">
+                  <h3 class="campaign-title">Voucher Bahagia Ibu Yatim</h3>
+                  <div class="campaign-author">
+                    <img src="assets/img/logo-sm.png" alt="">
+                    <div class="campaign-author-name">
+                      <span>Yakesma</span>
+                      <i class="fa fa-check-circle author-verified"></i>
+                    </div>
+                  </div>
+                  <div class="campaign-info">
+                    <div class="campaign-funds">
+                      terkumpul
+                      <span class="highlight">
+                        Rp500.000,-
+                      </span>
+                    </div>
+                    <div class="campaign-total-person">
+                      sisa waktu
+                      <span class="highlight">
+                        38
+                      </span>
+                    </div>
+                  </div>
+                  <div class="campaign-progress">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="campaign-target">
+                      <span>dari target</span>
+                      <span>10%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="campaign-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card campaign-card">
+              <div class="card-body">
+                <div class="campaign-thumbnail">
+                  <img src="assets/img/slider3.jpeg" alt="">
+                </div>
+                <div class="campaign-content">
+                  <h3 class="campaign-title">Voucher Bahagia Ibu Yatim</h3>
+                  <div class="campaign-author">
+                    <img src="assets/img/logo-sm.png" alt="">
+                    <div class="campaign-author-name">
+                      <span>Yakesma</span>
+                      <i class="fa fa-check-circle author-verified"></i>
+                    </div>
+                  </div>
+                  <div class="campaign-info">
+                    <div class="campaign-funds">
+                      terkumpul
+                      <span class="highlight">
+                        Rp500.000,-
+                      </span>
+                    </div>
+                    <div class="campaign-total-person">
+                      sisa waktu
+                      <span class="highlight">
+                        38
+                      </span>
+                    </div>
+                  </div>
+                  <div class="campaign-progress">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="campaign-target">
+                      <span>dari target</span>
+                      <span>10%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="campaign-see-more">
+          <button type="button" class="btn btn-primary btn-large">Lihat Campaign Lainnya</button>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-container container">
+        <div class="newsletter-content">
+          <div class="newsletter-info">
+            <h3>Berlangganan Informasi</h3>
+            <p>Dapatkan update informasi seputar campaign favoritmu, gratis!</p>
+          </div>
+          <div class="newsletter-form">
+            <form action="" method="">
+              <input type="text" class="form-control" placeholder="Masukkan alamat email anda" required />
+              <button class="btn btn-primary">Subsicribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="footer-container container">
+        <div class="footer-row row">
+          <div class="col-sm-12 col-md-6">
+            <h3>Laznas Yakesma</h3>
+            <p>Jl.Teluk Jakarta No.9 Komp.AL Rawa Bambu, Pasar Minggu, Jakarta Selatan 12520</p>
+            <p>Telp: (021)22 789 677 | 0822 7333 3477</p>
+            <p>Email: welcome@yakesma.org</p>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3">
+            <h4>temanberbagi.yakesma.org</h4>
+            <ul>
+              <li>
+                <a href="">Syarat & Ketentuan</a>
+              </li>
+              <li>
+                <a href="">Tentang Kami</a>
+              </li>
+              <li>
+                <a href="">Kebijakan Privasi</a>
+              </li>
+              <li>
+                <a href="">Tim Kami</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3">
+            <h4>Pusat Bantuan</h4>
+            <ul>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+              <li>
+                <a href="">Hubungi Kami</a>
+              </li>
+              <li>
+                <a href="">Konfirmasi Donasi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-container container d-md-flex py-4">
+        <div class="mr-md-auto text-center text-md-left">
+          <div class="copyright">
+            &copy; Copyright <strong><span>2022 Teman Berbagi</span></strong>
+          </div>
+          <div class="credits">
+            Developed by <a href="#">Yakesma TechTeam</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="https://twitter.com/yakesma" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/Yakesmaa/" class="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/yakesma/" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCmHbQRnEc10oFiouQpLdOHA" class="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/6282273333477?text=Assalamualaikum.%20Saya%20ingin%20konfirmasi%20donasi%20saya" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modalMetodePembayaran" class="modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Pilih Metode Pembayaran</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="list-group list-group-flush">
+            <button type="button" class="list-group-item list-group-item-action" data-id="1" data-name="Bank Mandiri">
+              <img src="assets/img/yakesma-new-logo.jpg" class="logo-bank" alt="">
+              Bank Mandiri
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" data-id="2" data-name="BCA">
+              <img src="assets/img/yakesma-new-logo.jpg" class="logo-bank" alt="">
+              BCA
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" data-id="3" data-name="BNI">
+              <img src="assets/img/yakesma-new-logo.jpg" class="logo-bank" alt="">
+              BNI
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" data-id="4" data-name="Cimb Niaga">
+              <img src="assets/img/yakesma-new-logo.jpg" class="logo-bank" alt="">
+              Bank CIMB Niaga
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" data-id="5" data-name="Mandiri Syariah">
+              <img src="assets/img/yakesma-new-logo.jpg" class="logo-bank" alt="">
+              Bank Mandiri Syariah
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" data-id="6" data-name="Gopay">
+              <img src="assets/img/yakesma-new-logo.jpg" class="logo-bank" alt="">
+              Gopay
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-simpan">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
