@@ -6,7 +6,7 @@ $(document).ready(function() {
     event.stopPropagation();
   });
   $("html").on("click", function (event) {
-    if (!$(event.target).hasClass("header-menu-mobile")) {
+    if (!$(event.target).hasClass("header-menu-mobile") && !$(event.target).hasClass("input-search-mobile")) {
       $(".header-menu-mobile").removeClass("opened")
       $(".header-menu").removeClass("open");
     }
@@ -40,11 +40,29 @@ $(document).ready(function() {
     $("#inputMetodePembayaran").val(dataName);
     $("#modalMetodePembayaran").modal("hide");
   });
-  $(".owl-carousel").owlCarousel({
+  $(".slider-list").owlCarousel({
     loop: true,
     items: 1,
     nav: true,
     dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        nav: false
+      },
+      640: {
+        nav: true
+      }
+    }
+  });
+  $(".other-list").owlCarousel({
+    loop: true,
+    items: 3,
+    nav: true,
+    dots: false,
+    margin: 10,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
