@@ -19,7 +19,8 @@
         <div class="header-content-inner d-flex justify-content-between align-items-center">
           <div class="header-logo">
             <a href="#">
-              <img src="assets/img/yakesma-new-logo.jpg" alt="">
+              <img src="assets/img/yakesma-new-logo.jpg" class="d-sm-none d-md-block" alt="">
+              <img src="assets/img/logo-sm.png" class="d-md-none" alt="">
             </a>
           </div>
           <div class="header-search">
@@ -71,13 +72,13 @@
     <section class="hero">
       <div class="hero-container container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <div class="hero-content">
               <h3>Teman Berbagi</h3>
               <p class="d-md-block d-xs-none">adalah Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est possimus nesciunt sed architecto</p>
-              <span class="collected-funds d-md-block d-xs-none">Rp41.000.000</span>
+              <span class="collected-funds">Rp41.000.000</span>
               <p>Voluptatem est possimus nesciunt sed architecto, aut ducimus repellat beatae ipsum perspiciatis explicabo sint natus autem exercitationem! Cupiditate eum atque adipisci </p>
-              <div class="collected-types d-md-flex d-xs-none">
+              <div class="collected-types">
                 <div class="types-item">
                   <img src="assets/img/donation.png" alt="">
                   <span>Zakat</span>
@@ -91,7 +92,7 @@
                   <span>Ramadhan</span>
                 </div>
               </div>
-              <div class="other-types d-md-flex d-xs-none">
+              <div class="other-types">
                 <h4>Program Reguler</h4>
                 <div class="other-list owl-carousel owl-theme">
                   <div class="other-item">
@@ -114,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <div class="card donasi-sekarang">
               <div class="card-header">
                 <h3>Donasi Umum</h3>
@@ -549,15 +550,34 @@
           </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="https://twitter.com/yakesma" class="twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.facebook.com/Yakesmaa/" class="facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/yakesma/" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/yakesma" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/Yakesmaa/" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/yakesma/" class="instagram"><i class="fa fa-instagram"></i></a>
           <a href="https://www.youtube.com/channel/UCmHbQRnEc10oFiouQpLdOHA" class="youtube"><i class="fab fa-youtube"></i></a>
           <a href="https://wa.me/6282273333477?text=Assalamualaikum.%20Saya%20ingin%20konfirmasi%20donasi%20saya" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
   </footer>
+
+  <div class="nav-bottom">
+    <a href="#" class="nav-bottom-link active">
+      <i class="fa fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#" class="nav-bottom-link">
+      <i class="fa fa-heart"></i>
+      <span>Campaign</span>
+    </a>
+    <a href="#" class="nav-bottom-link">
+      <i class="fa fa-calculator"></i>
+      <span>Kalkulator Zakat</span>
+    </a>
+    <a href="#" class="nav-bottom-link">
+      <i class="fa fa-gift"></i>
+      <span>Donasi Saya</span>
+    </a>
+  </div>
 
   <div id="modalMetodePembayaran" class="modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
